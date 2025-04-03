@@ -1,1 +1,62 @@
-<p>skills works!</p>
+<section class="min-h-[160vh] bg-cover  bg-skills-bg flex justify-center text-white p-[5%]">
+
+
+    <div class="flex flex-col items-center min-h-full gap-[10%] text-lg py-20 md:text-xl">
+
+        <div class="flex flex-col items-end w-full h-fit">
+            <span>MY STACK</span>
+            <h2 class="text-5xl font-bold sm:text-6xl md:text-7xl lg:text-8xl">Skill set</h2>
+        </div>
+
+        <div class="w-full max-w-2xl text-black bg-cover px-7 py-11 bg-skill-label">
+            A short introduction of your skills. Highlight your experience of using different front-end technologies and
+            emphasise your openness to learning and adapting to new technologies.
+        </div>
+
+
+        <div class="relative grid max-w-3xl grid-cols-3 gap-8 md:grid-cols-4 lg:grid-cols-5">
+            @for (skill of skillService.skills; track $index) {
+
+            <div class="flex flex-col items-center justify-center gap-3 text-center w-28">
+                <img class="w-16 h-16 lg:w-20 lg:h-20" src="{{skill.img}}" alt="{{skill.name}}">
+                <p>{{skill.name}}</p>
+            </div>
+            }
+
+
+
+            <div class="absolute bottom-[-100px] right-[0] rotate-12">
+
+                <div
+                    class="relative flex flex-col items-center justify-center gap-2 overflow-hidden bg-cover w-52 h-52 bg-pull-label">
+                    <p class="text-xl font-bold">Also I'm interested <br> in diving into:</p>
+
+                    <div class="flex">
+                        <span>
+                            <img src="/assets/skills/React-white.svg" alt="">
+                        </span>
+
+                        <span>
+                            <img src="/assets/skills/Vue.js-white.svg" alt="">
+                        </span>
+                    </div>
+
+                    <img id="label1"
+                        class="absolute z-10 cursor-pointer duration-100 hover:scale-[1.006] hover:translate-y-[2px] hover:translate-x-[-2px]"
+                        (click)="openPull()" src="/assets/design/pull-label1.png" alt="">
+                    <img id="label2" class="absolute delay-1000" src="/assets/design/pull-label2.png" alt="">
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+</section>
