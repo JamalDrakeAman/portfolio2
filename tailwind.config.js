@@ -12,7 +12,7 @@ module.exports = {
         'skills-bg': "url('/assets/design/bg-skills.png')",
         'skill-label': "url('/assets/design/skills-label.png')",
         'pull-label': "url('/assets/design/pull-label3.png')",
-        'paper-bg': "url('/assets/design/paper.svg')"
+        'universe-bg': "url('/assets/design/universe.svg')"
       },
       screens: {
         '3xl': '1920px',  // Custom Breakpoint für 4K/Full HD

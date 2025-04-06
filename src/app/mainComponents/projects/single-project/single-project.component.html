@@ -1,4 +1,4 @@
-<section class="flex flex-col gap-5 border border-yellow-400">
+<section class="flex flex-col gap-5  max-w-[700px] min-h-[600px] p-10 rounded-xl bg-skills-bg bg-cover text-white">
 
     <img src="{{project.coverPath}}" alt="">
     <h2 class="text-3xl font-bold">{{project.name}}</h2>
@@ -6,5 +6,9 @@
         {{project.description}}
     </p>
 
+    <div class="flex justify-around w-full">
+        <button class="px-6 py-3 border border-black rounded-[100px]">Gitub</button>
+        <button class="px-6 py-3 border border-black rounded-[100px]">Live Test</button>
+    </div>
 
 </section>
