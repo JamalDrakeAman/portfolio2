@@ -24,6 +24,14 @@ export class ProjectsService {
       github: 'https://github.com/JamalDrakeAman/Captain-Pirate',
       live: 'https://captain-pirate.jamalaman.com/'
     },
+    {
+      name: 'Pokédex',
+      description: 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
+      coverPath: '/assets/projects/pokedex-img.png',
+      skills: 'JavaScript | HTML | CSS | Api',
+      github: 'https://github.com/JamalDrakeAman/Pokedex',
+      live: 'https://pokedex.jamalaman.com'
+    },
   ]
 
 }
