@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { SkillsService } from '../../shared/services/skills.service';
+import { InterestLabelComponent } from "./interest-label/interest-label.component";
 
 @Component({
   selector: 'app-skills',
-  imports: [],
+  imports: [InterestLabelComponent],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'
 })
@@ -13,10 +14,6 @@ export class SkillsComponent {
 
   }
 
-  openPull() {
-    console.log('open');
-    document.getElementById('label1')?.classList.add('diagonal-move1');
-    document.getElementById('label2')?.classList.add('diagonal-move2');
-  }
+
 
 }

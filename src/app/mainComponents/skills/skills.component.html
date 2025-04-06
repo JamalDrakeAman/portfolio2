@@ -1,4 +1,4 @@
-<section class="min-h-[160vh] bg-cover  bg-skills-bg flex justify-center text-white p-[5%]">
+<section class="min-h-fit bg-cover pb-32 bg-skills-bg flex justify-center text-white p-[5%]">
 
 
     <div class="flex flex-col items-center min-h-full gap-[10%] text-lg py-20 md:text-xl">
@@ -23,39 +23,9 @@
             </div>
             }
 
-
-
-            <div class="absolute bottom-[-100px] right-[0] rotate-12">
-
-                <div
-                    class="relative flex flex-col items-center justify-center gap-2 overflow-hidden bg-cover w-52 h-52 bg-pull-label">
-                    <p class="text-xl font-bold">Also I'm interested <br> in diving into:</p>
-
-                    <div class="flex">
-                        <span>
-                            <img src="/assets/skills/React-white.svg" alt="">
-                        </span>
-
-                        <span>
-                            <img src="/assets/skills/Vue.js-white.svg" alt="">
-                        </span>
-                    </div>
-
-                    <img id="label1"
-                        class="absolute z-10 cursor-pointer duration-100 hover:scale-[1.006] hover:translate-y-[2px] hover:translate-x-[-2px]"
-                        (click)="openPull()" src="/assets/design/pull-label1.png" alt="">
-                    <img id="label2" class="absolute delay-1000" src="/assets/design/pull-label2.png" alt="">
-                </div>
-
-            </div>
-
-
+            <app-interest-label class="absolute bottom-[-20%] right-[0] rotate-12"></app-interest-label>
 
         </div>
-
-
-
-
 
     </div>
 
