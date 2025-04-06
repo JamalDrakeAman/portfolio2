@@ -1,7 +1,11 @@
-<section class="flex flex-col gap-5  max-w-[700px] min-h-[600px] p-10 rounded-xl bg-skills-bg bg-cover text-white">
-
-    <img src="{{project.coverPath}}" alt="">
+<section class="flex flex-col gap-5  max-w-[800px] min-h-[600px] p-[5%] rounded-xl bg-skills-bg bg-cover text-white">
     <h2 class="text-3xl font-bold">{{project.name}}</h2>
+    <div class="relative flex w-full h-[50%] justify-center" >
+        <img class=" w-[200px] absolute left-[-80px] z-10" src="{{project.imgPhone}}" alt="">
+        <img class="w-[90%]" src="{{project.imgDesktop}}" alt="">
+    </div>
+    
+    
     <p class="text-lg">
         {{project.description}}
     </p>
