@@ -7,12 +7,33 @@
     src: url('/assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf');
 }
 
-*{
+@font-face {
+    font-family: 'Kalam';
+    src: url('/assets/fonts/kalam/Kalam-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Kalam';
+    src: url('/assets/fonts/kalam/Kalam-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Kalam';
+    src: url('/assets/fonts/kalam/Kalam-Light.ttf') format('truetype');
+    font-weight: light;
+}
+
+* {
     font-family: 'Bricolage';
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.light-shadow{
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+html {
+    background-color: black;
 }
 
+.light-shadow {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+}
