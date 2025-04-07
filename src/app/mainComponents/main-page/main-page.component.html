@@ -1,11 +1,20 @@
-<section class="flex flex-col items-center bg-fixed bg-universe-bg">
 
 
-    <div class="w-full bg-[rgba(255,255,255,0.48)] bg-center max-w-screen-3xl">
 
-        <app-hero class="w-full"></app-hero>
+<section class="relative flex flex-col items-center bg-fixed bg-center ">
 
-        <app-about class="w-full"></app-about>
+    <div class="fixed top-0 left-0 w-full h-full bg-cover bg-universe-bg -z-10">
+    </div>
+
+    <div class="absolute top-0 bottom-0 left-0 right-0 bg-[rgba(255,255,255,0.2)] max-w-screen-3xl h-[100%] mx-auto blur">
+    </div>
+
+
+    <div class="z-10 w-full overflow-hidden bg-center max-w-screen-3xl">
+
+        <app-hero></app-hero>
+
+        <app-about></app-about>
 
         <app-skills></app-skills>
 

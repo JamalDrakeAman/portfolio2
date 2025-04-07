@@ -1,6 +1,6 @@
 <section class="flex min-h-screen p-[5%]">
 
-    <div class="flex flex-col w-full gap-10 border border-blue-500">
+    <div class="flex flex-col w-full gap-10 ">
 
         <div class="flex flex-col items-start w-full h-fit">
             <span>MY CRAFT</span>
@@ -14,17 +14,11 @@
         </p>
 
 
-        <div class="grid items-center h-full grid-cols-1 gap-32 border border-green-700 xl:grid-cols-2 ">
-
+        <div class="grid items-center h-full grid-cols-1 gap-32 xl:grid-cols-2 ">
 
             @for (info of projectService.projects; track $index) {
             <app-single-project class="mx-auto" [project]="info"></app-single-project>
             }
-
-
-
-
-
 
         </div>
 

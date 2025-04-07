@@ -14,7 +14,9 @@ module.exports = {
         'pull-label': "url('/assets/design/pull-label3.png')",
         'universe-bg': "url('/assets/design/universe.svg')",
         'footer-bg': "url('/assets/design/bg-footer.png')",
-        'label-bg': "url('/assets/design/bg-label.png')"
+        'label-bg': "url('/assets/design/bg-label.png')",
+        'feedback-label1': "url('/assets/design/feedback-label1.png')",
+        'feedback-label2': "url('/assets/design/feedback-label2.png')"
       },
       screens: {
         '3xl': '1920px',  // Custom Breakpoint für 4K/Full HD
